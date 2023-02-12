@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    
+    <h1>Lista de tarefas</h1>
+
+    <section id="txtadd">
+        <input type="text" class="input" id="caixadetexto"placeholder="Adicione uma tarefa">
+        <input type="button" value="✚" id="add" onclick="adicionar()">
+    </section>
+
+    <section>
+        <nav>
+            <ul class="navtarefas">
+                <li class="navtarefas"><button class="botaonav" onclick="marcar()">Marcar todas as tarefas</button></li>
+                <li class="navtarefas" ><button class="botaonav" onclick="marcar()">Desmarcar todas as tarefas</button></li>
+                <li class="navtarefas"><button class="botaonav" onclick="limpar()">Limpar</button></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div id="container_lista">
+            <ul id="listatarefas">
+
+            </ul>
+        </div>
+    </section>
+  
+    <footer>
+       
+    </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
